@@ -1,0 +1,191 @@
+.budget
+	background-image: url('../img/budget/budget-bg.png')
+	background-repeat: no-repeat
+	background-size: cover
+	padding-bottom: 110px
+	@media(max-width: 480px)
+		background-position-x: 23%
+	&__sub-title
+		color: #ffffff
+		font-family: Oswald
+		font-size: 24px
+		text-align: center
+		@media(max-width: 1100px)
+			margin-bottom: 50px
+	&__container
+		&__inner
+			position: relative
+			display: flex
+			align-items: center
+			justify-content: center
+			@media(max-width: 1100px)
+				flex-wrap: wrap
+				justify-content: space-around
+	&__item
+		position: relative
+		width: 230px
+		height: 70px
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		font-family: Oswald
+		font-size: 18px
+		line-height: 1.2
+		margin-right: 60px
+		text-transform: uppercase
+		padding: 10px
+		box-sizing: border-box
+		color: #fff
+		background: linear-gradient(to left,#ae9bce 0,#9091c8 100%)
+		@media(max-width: 1220px)
+			margin-right: 40px
+		@media(max-width: 1100px)
+			width: 43%
+			margin-right: inherit
+			margin-bottom: 70px
+		@media(max-width: 768px)
+			width: 80%
+			margin-bottom: 40px
+
+
+		&--first
+			margin-top: 150px
+			@media(max-width: 1100px)
+				margin-top: inherit
+			&:before
+				content: ''
+				position: absolute
+				display: block
+				width: 2px
+				height: 150px
+				left: 50%
+				top: -150px
+				transform: translateX(50%)
+				background-color: #37416f
+				@media(max-width: 1100px)
+					display: none
+			&:after
+				content: '01'
+				position: absolute
+				display: block
+				font-family: Oswald
+				font-size: 120px
+				color: #d2d7f0
+				top: 28px
+				left: -58px
+				opacity: 0.4
+				@media(max-width: 1220px)
+					left: -40px
+					font-size: 100px
+				@media(max-width: 768px)
+					font-size: 75px
+
+				
+		&--second
+			margin-top: 100px
+			@media(max-width: 1100px)
+				margin-top: inherit
+			&:before
+				content: ''
+				position: absolute
+				display: block
+				width: 2px
+				height: 125px
+				left: 50%
+				top: -125px
+				transform: translateX(50%)
+				background-color: #37416f
+				@media(max-width: 1100px)
+					display: none
+
+			&:after
+				content: '02'
+				position: absolute
+				display: block
+				font-family: Oswald
+				font-size: 120px
+				color: #d2d7f0
+				top: 28px
+				left: -58px
+				opacity: 0.4
+				@media(max-width: 1220px)
+					left: -40px
+					font-size: 100px
+				@media(max-width: 768px)
+					font-size: 75px
+		&--third
+			margin-top: 50px
+			@media(max-width: 1100px)
+				margin-top: inherit
+			&:before
+				content: ''
+				position: absolute
+				display: block
+				width: 2px
+				height: 100px
+				left: 50%
+				top: -100px
+				transform: translateX(50%)
+				background-color: #37416f
+				@media(max-width: 1100px)
+					display: none
+			&:after
+				content: '03'
+				position: absolute
+				display: block
+				font-family: Oswald
+				font-size: 120px
+				color: #d2d7f0
+				top: 28px
+				left: -58px
+				opacity: 0.4
+				@media(max-width: 1220px)
+					left: -40px
+					font-size: 100px
+				@media(max-width: 768px)
+					font-size: 75px
+
+		&--fourth
+			margin-right: 0
+			@media(max-width: 1100px)
+				margin-top: inherit
+				margin-right: inherit
+			&:before
+				content: ''
+				position: absolute
+				display: block
+				width: 2px
+				height: 77px
+				left: 49%
+				top: -77px
+				transform: translateX(50%)
+				background-color: #37416f
+				@media(max-width: 1100px)
+					display: none
+			&:after
+				content: '04'
+				position: absolute
+				display: block
+				font-family: Oswald
+				font-size: 120px
+				color: #d2d7f0
+				top: 28px
+				left: -58px
+				opacity: 0.4
+				@media(max-width: 1220px)
+					left: -40px
+					font-size: 100px
+				@media(max-width: 768px)
+					font-size: 75px
+
+
+.budget-line
+	border-bottom: 2px solid #37416f
+	height: 2px
+	width: 869px
+	margin: 30px auto 0
+	@media(max-width: 1220px)
+		width: 809px
+	@media(max-width: 1100px)
+		display: none

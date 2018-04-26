@@ -1,0 +1,37 @@
+//html
+	overflow-x: hidden
+	overflow-y: scroll
+
+body
+	overflow-x: hidden
+
+$main-color: #000
+$sec-color: #ffda44
+$bg-gradient: linear-gradient(to top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0.1) 100%)
+//$font-family: Oswald
+//$font-color: #333
+//$font-size: 30px
+
+@mixin h2-mixin($font-size ,$font-family, $font-color )
+	font-size: $font-size
+	font-family: $font-family
+	color: $font-color
+
+h2
+	@include h2-mixin(36px , oswald, #384272)
+	text-align: center
+	padding: 50px 0
+	line-height: 1.3
+	text-transform: uppercase
+	@media (max-width: 480px)
+		@include h2-mixin(28px , oswald, #384272)
+		padding: 30px 0
+
+a
+    &:focus
+        text-decoration: none
+    &:active
+        text-decoration: none
+    
+.title-whte
+	color: #fff

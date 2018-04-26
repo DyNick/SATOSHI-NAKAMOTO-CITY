@@ -1,0 +1,66 @@
+include template/intro
+include template/header
+include template/firstvdbr
+include template/ambassadors
+include template/become-ambassadors
+include template/benefit-ambassadors
+include template/get-investor
+include template/tocen-economy
+include template/emission
+include template/monument-location
+include template/ico-many
+include template/manage
+include template/republic-manage
+include template/system-manage
+include template/roadmap
+include template/budget
+include template/island
+include template/footer
+
+
+
+
+doctype html
+html(lang="ru")
+  head
+    title= ''
+    //- meta
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    //- libs
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    //- link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+    //- custom css
+    link(href='css/main.css', rel='stylesheet')
+  body
+    +header()
+    +intro()
+    +firstvdbr()
+    +ambassadors()
+    +become-ambassadors()
+    +benefit-ambassadors()
+    +get-investor()
+    +tocen-economy()
+    +emission()
+    +monument-location()
+    +ico-many()
+    +manage()
+    +republic-manage()
+    +system-manage()
+    +roadmap()
+    +budget()
+    +island()
+    +footer()
+
+
+
+    //- libs
+
+    //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="http://satoshinakamoto.foundation/js/libs.min.js")
+
+
+    //- custom scripts
+    script(src="js/main.js")
+    

@@ -1,0 +1,331 @@
+.footer
+	background-color: #5d6685
+	//padding: 35px 0 105px
+	padding: 35px 0
+	@media(max-width: 768px)
+		padding: 35px 0
+.footer__content
+	display: flex
+	font-weight:
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+
+.footer__logoBlock
+	margin-right: 35px
+
+.footer__socBlock
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-webkit-align-items: center
+	-ms-flex-align: center
+	align-items: center
+
+.footer__socText
+	font-family: SourceSansPro
+	font-size: 17px
+	font-weight: 600
+	color: #fff
+	text-transform: uppercase
+	margin-right: 15px
+
+.footer__socWrap
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+
+.footer__socLink
+	display: block
+	width: 40px
+	height: 40px
+	-webkit-border-radius: 50%
+	border-radius: 50%
+	background-color: #fff
+	position: relative
+	margin-right: 8px
+	&:last-child
+		margin-right: 0
+
+.footer__socLink_facebook:before
+	content: url(http://satoshirepublic.org/img/socials/facebook-dark.svg)
+
+.footer__socLink_youtube:before
+	content: url(http://satoshirepublic.org/img/socials/youtube-dark.svg)
+
+.footer__socLink_telegram:before
+	content: url(http://satoshirepublic.org/img/socials/telegram-dark.svg)
+
+.footer__socLink_twitter:before
+	content: url(http://satoshirepublic.org/img/socials/twitter-dark.svg)
+
+.footer__socLink_instagram:before
+	content: url(http://satoshirepublic.org/img/socials/instagram-dark.svg)
+
+.footer__socLink_linkedIn:before
+	content: url(http://satoshirepublic.org/img/socials/linkedin-dark.svg)
+
+.footer__socLink:before
+	position: absolute
+	top: 55%
+	left: 50%
+	-webkit-transform: translate(-50%, -50%)
+	-ms-transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%)
+
+.donatePopup
+	display: none
+	position: fixed
+	z-index: 5
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow: auto
+	background-color: rgba(0, 0, 0, 0.9)
+	//====================infoPanel====================
+.logo-container--white
+	color: #fff
+	margin-right: 5px
+	border-color: #fff
+
+.logo-container--white .logo-container__sn__nakamoto
+	border-color: #fff
+
+
+
+
+.infoPanel
+	position: fixed
+	background-color: #c886d3
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-webkit-align-items: center
+	-ms-flex-align: center
+	align-items: center
+	height: 70px
+	width: 100%
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 5
+	-webkit-transition: -webkit-transform .35s ease
+	transition: -webkit-transform .35s ease
+	-o-transition: transform .35s ease
+	transition: transform .35s ease
+	transition: transform .35s ease,-webkit-transform .35s ease
+
+.infoPanel_mobile
+	left: 0
+	bottom: 0
+	width: 302px
+	height: 182px
+	-webkit-transform: translateX(-100%)
+	-ms-transform: translateX(-100%)
+	transform: translateX(-100%)
+
+.infoPanel_show
+	-webkit-transform: translateX(0)
+	-ms-transform: translateX(0)
+	transform: translateX(0)
+
+.infoPanel__items
+	position: relative
+	width: 100%
+	min-height: 1px
+	padding-right: 15px
+	padding-left: 15px
+	-webkit-box-flex: 0
+	-webkit-flex: 0 0 100%
+	-ms-flex: 0 0 100%
+	flex: 0 0 100%
+	max-width: 100%
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-webkit-align-items: center
+	-ms-flex-align: center
+	align-items: center
+
+.infoPanel__infoItem
+	margin-right: 35px
+
+.infoPanel__itemsWrap
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+
+.infoPanel__infoItem
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: end
+	-webkit-align-items: flex-end
+	-ms-flex-align: end
+	align-items: flex-end
+
+.infoPanel__donateBtn
+	width: 136px
+	height: 37px
+	-webkit-border-radius: 100px
+	border-radius: 100px
+	text-decoration: none
+	text-transform: uppercase
+	display: inline-block
+	font-family: SourceSansPro
+	font-size: 14px
+	line-height: 2.83
+	text-align: center
+	color: #fff
+	background-color: #3949ab
+	margin-right: 35px
+
+.infoPanel__infoBlock
+	text-align: right
+
+.infoPanel__infoTitle
+	font-family: Oswald
+	font-size: 12px
+	font-weight: 700
+	line-height: 1.6
+	color: #3949ab
+	display: block
+	margin-right: 5px
+
+.infoPanel__infoAmount
+	font-family: Oswald
+	font-size: 24px
+	line-height: 1.17
+	color: #fff
+
+.infoPanel__whitepaperLink
+	display: inline-block
+	text-decoration: none
+	font-family: SourceSansPro
+	font-size: 17px
+	font-weight: 600
+	text-align: center
+	color: #3949ab
+	text-transform: uppercase
+	position: relative
+	margin-left: 30px
+	&:before
+		position: absolute
+		left: -24px
+		top: 2px
+		content: url(http://satoshirepublic.org/img/whitepaper.svg)
+
+.infoPanel_donateSoc
+	margin-left: auto
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	margin-left: auto
+
+.infoPanel__donateSocLink
+	width: 38px
+	height: 38px
+	background-color: #fff
+	-webkit-border-radius: 50%
+	border-radius: 50%
+	display: block
+	margin-right: 10px
+	position: relative
+	&:last-child
+		margin-right: 0
+	&:before
+		position: absolute
+		left: 50%
+		top: 50%
+		-webkit-transform: translate(-50%, -50%)
+		-ms-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+
+.infoPanel__donateSocLink_facebook:before
+	background-image: url(http://satoshirepublic.org/img/fb-icon.svg)
+	-webkit-background-size: cover
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	width: 11.6px
+	height: 22.3px
+	-o-object-fit: contain
+	object-fit: contain
+	content: ''
+
+.infoPanel__donateSocLink_linkedIn:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/ldIn-icon.svg)
+	-webkit-background-size: cover
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	width: 20.6px
+	height: 19.7px
+	-o-object-fit: contain
+	object-fit: contain
+
+.infoPanel__infoItem__value
+	display: flex
+
+@media (max-width: 767px)
+	.infoPanel__infoItem__value
+		width: 100%
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.infoPanel__donateBtn
+		margin: 5px auto
+		width: 60%
+	.infoPanel__whitepaperLink
+		display: block
+		width: 100%
+		text-align: center
+		margin-left: 0px
+		&:before
+			left: 74px
+			display: none
+	.infoPanel_donateSoc
+		margin: 0 auto
+	.infoPanel__infoItem
+		&:nth-child(1)
+			margin-left: 0
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: center
+		&:nth-child(2)
+			margin-left: 0
+			order: 6
+			margin-top: 5px
+		&:nth-child(3)
+			margin-left: 0
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: center
+			order: 5
+	.infoPanel__infoTitle
+		margin-right: 7px
+	.infoPanel_mobile
+		height: 223px
+	.infoPanel__infoTitle
+		font-size: 15px
+	.infoPanel__infoAmount
+		font-size: 16px

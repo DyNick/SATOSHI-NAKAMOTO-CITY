@@ -1,0 +1,101 @@
+.republic-manage
+	padding-bottom: 30px
+	&__container
+		width: 1190px
+		@media(max-width: 1190px)
+			width: 100%
+		&__inner
+			display: flex
+			align-items: center
+			justify-content: space-around
+			flex-wrap: wrap
+	&__sub-title
+		font-size: 24px
+		color: #bf79be
+		text-align: center
+		font-family: SourceSansPro
+		text-transform: uppercase
+		margin-bottom: 50px
+
+	&__item
+		position: relative
+		width: 270px
+		height: 358px
+		margin-bottom: 20px
+		box-sizing: border-box
+		overflow: hidden
+		@media(max-width: 1190px)
+			width: 24%
+			height: auto
+		@media(max-width: 998px)
+			width: 32%
+		@media(max-width: 768px)
+			width: 45%
+		@media(max-width: 480px)
+			width: 90%
+		&__hover
+			position: absolute
+			top: 44px
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 2
+			background-color: #fff
+			font-size: 14px
+			transition: .3s
+			transform: translateY(100%)
+			color: #37416f
+			font-family: SourceSansPro
+			box-sizing: border-box
+			padding: 20px
+			padding-left: 35px
+			@media(max-width: 998px)
+				font-size: 14px
+				padding-top: 3px
+				padding-bottom: 3px
+			@media(max-width: 480px)
+				padding: 20px
+				padding-left: 35px
+				font-size: 17px
+
+			ul
+				li 
+					position: relative
+					margin-bottom: 10px
+					@media(max-width: 998px)
+						padding-bottom: 0px
+				li:before
+					content: ''
+					position: absolute
+					display: block
+					width: 10px
+					height: 10px
+					border-radius: 50%
+					background-color: #37416f
+					left: -20px
+					top: 3px
+
+		&__title
+			padding-left: 15px
+			
+		&__icon
+			padding-right: 15px
+		&__header
+			height: 44px
+			font-family: Oswald
+			color: #fff
+			font-size: 18px
+			text-transform: uppercase
+			background-color: #7b82b8
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__image
+			width: 100%
+
+
+.republic-manage__item:hover .republic-manage__item__hover
+	transition: .3s
+	cursor: pointer
+	transform: translateY(0)
+

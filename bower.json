@@ -1,0 +1,17 @@
+{
+  "name": "gulp_builder",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "Stas Glebov <Stasglebov@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "normalize.css": "*"
+  }
+}

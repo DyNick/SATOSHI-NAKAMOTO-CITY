@@ -1,0 +1,120 @@
+.system-manage
+	background-image: url('../img/system-manage/system-manage.png')
+	background-repeat: no-repeat
+	background-size: cover
+	&__title
+		padding-bottom: 30px
+	&__subtitle
+		font-family: Oswald
+		text-align: center
+		color: #3d4673
+		font-size: 24px
+	p
+		color: #ffffff
+		text-align: center
+		font-family: Oswald
+		font-size: 24px
+//padding-top: 10px
+
+.system-manage__container-title
+	background-color: #fff
+	font-size: 24px
+	color: #ac7abc
+	padding: 10px
+	display: block
+	text-align: center
+	font-family: Oswald
+	margin: 50px auto
+	text-transform: uppercase
+	width: 250px
+
+.system-manage__inner
+	display: flex
+	align-items: center
+	justify-content: center
+	padding-bottom: 30px
+	flex-wrap: wrap
+
+
+.system-manage__item
+	width: 20%
+	text-align: center
+	position: relative
+	@media(max-width: 1220px)
+		width: 22%
+	@media(max-width: 998px)
+		width: 27%
+	@media(max-width: 768px)
+		width: 100%
+		margin-bottom: 20px
+	&--first:before
+		content: ''
+		display: block
+		position: absolute
+		width: 100px
+		height: 2px
+		background: linear-gradient(to left,#ae9bce 0,#9091c8 100%)
+		top: 50%
+		left: -43px
+		@media(max-width: 768px)
+			display: none
+	&--second:before
+		content: ''
+		display: block
+		position: absolute
+		width: 100px
+		height: 2px
+		background: linear-gradient(to left,#ae9bce 0,#9091c8 100%)
+		top: 50%
+		left: -43px
+		@media(max-width: 768px)
+			display: none
+	&--second:after
+		content: ''
+		display: block
+		position: absolute
+		width: 100px
+		height: 2px
+		background: linear-gradient(to left,#ae9bce 0,#9091c8 100%)
+		top: 50%
+		right: -43px
+		@media(max-width: 768px)
+			display: none
+	&--third:after
+		content: ''
+		display: block
+		position: absolute
+		width: 100px
+		height: 2px
+		background: linear-gradient(to left,#ae9bce 0,#9091c8 100%)
+		top: 50%
+		right: -43px
+		@media(max-width: 768px)
+			display: none
+	&--third:before
+		content: ''
+		display: block
+		position: absolute
+		width: 15px
+		height: 15px
+		background: #9091c8
+		top: 46%
+		border-radius: 50%
+		right: -43px
+		z-index: 1
+		@media(max-width: 768px)
+			display: none
+
+
+	&__description
+		color: #3d4673
+		font-family: Oswald
+		font-size: 18px
+		text-transform: uppercase
+		line-height: 1.2
+		height: 65px
+	&__image
+		height: 104px
+
+.system-manage__container
+	position: relative

@@ -1,0 +1,138 @@
+.ambassadors
+	background-color: #fff
+	
+.container__ambassadors
+	width: 100%
+	position: relative
+	&--first:before
+		content: ''
+		position: absolute
+		height: 150px
+		width: 2px
+		display: block
+		left: 20%
+		top: -40px
+		background: linear-gradient(to bottom, #7774b7 1%,#a77bbb 100%)
+		@media(max-width: 768px)
+			display: none
+	&--first:after
+		content: ''
+		position: absolute
+		height: 2px
+		width: 400px
+		display: block
+		right: 0%
+		top: 30px
+		background: linear-gradient(to bottom, #7774b7 1%,#a77bbb 100%)
+		@media(max-width: 1024px)
+			display: none
+
+	&--second:after
+		content: ''
+		position: absolute
+		height: 2px
+		width: 400px
+		display: block
+		left: 0%
+		bottom: -54px
+		background: linear-gradient(to bottom, #7774b7 1%,#a77bbb 100%)
+		@media(max-width: 1024px)
+			display: none
+
+
+	&__half
+		width: 50%
+		@media(max-width: 1024px)
+			width: 100%
+		&--left
+			position: relative
+			left: 70px
+			@media(max-width: 1240px)
+				width: 400px
+			@media(max-width: 1024px)
+				width: 100%
+				//left: 0
+		&--right
+			height: 395px
+			width: 585px
+			position: absolute
+			right: 70px
+			top: 85px
+			transform: translateX(0px)
+			background-color: #6b7599
+			color: #fff
+			padding: 25px 50px
+			@media(max-width: 1240px)
+				padding: 25px
+			@media(max-width: 1024px)
+				right: 0px
+				left: 50%
+				top: 85px
+				transform: translateX(-50%)
+				position: relative
+			@media(max-width: 768px)
+				width: 90%
+				height: auto
+				box-sizing: border-box
+				top: 0
+
+.ambassadors-item
+	&__img
+		width: 100%
+		@media(max-width: 1024px)
+			display: none
+	&__list
+		&__item
+			font-family: SourceSansPro
+			height: 100%
+			font-size: 20px
+			line-height: 1.2
+			position: relative
+			z-index: 1
+			margin-top: 25px
+	&--description
+		font-family: Oswald
+		height: 100%
+		h3
+			color: #d5d6fa
+			font-size: 24px
+
+
+
+.ambassadors__rectangle
+	position: absolute
+	left: 50%
+	transform: translateX(-50px)
+	top: -30px
+	padding: 3px
+	height: 600px
+	width: 340px
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, #7774b7), color-stop(0.67, #a77bbb ))
+	@media(max-width: 768px)
+		transform: translateX(-50%)
+		height: 580px
+	@media(max-width: 480px)
+		display: none
+	&__inner
+		width: 100%
+		height: 100%
+		background-color: #fff
+
+.ambassadors-circle-first
+	position: absolute
+	z-index: 1
+	left: 54%
+	top: -65px
+	@media(max-width: 1024px)
+		left: inherit
+		right: 0
+	@media(max-width: 480px)
+		display: none
+.ambassadors-circle-second
+	position: absolute
+	z-index: 1
+	left: 9%
+	bottom: -130px
+	width: 300px
+	@media(max-width: 480px)
+		display: none

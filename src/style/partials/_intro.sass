@@ -1,0 +1,296 @@
+.container
+	box-sizing: border-box
+.intro
+	background-image: url(../img/section-intro/intro-bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 100%
+	height: 800px
+	background-position-x: 60%
+	//height: 100vh
+	padding-top: 80px
+	@media(max-width: 998px)
+		height: 100%
+	
+.title-intro
+	color: #ffffff
+	font-family: Oswald
+	font-size: 100px
+	text-transform: uppercase
+	@media(max-width: 998px)
+		margin: 40px 0
+	@media(max-width: 768px)
+		font-size: 75px
+		text-align: center
+		margin: 20px 0
+	@media(max-width: 480px)
+		font-size: 60px
+	&__text
+		color: #dacbfe
+
+.container__intro
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	height: 100%
+	flex-wrap: wrap
+	&__half
+		width: 50%
+		@media(max-width: 998px)
+			width: 100%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		&--title
+			display: flex
+			align-items: center
+			justify-content: center
+
+.descriptio-intro__first
+	display: flex
+	flex-direction: column
+	font-size: 24px
+	font-family: SourceSansPro
+	color: #fff
+	max-width: 525px
+	width: 100%
+	margin-bottom: 40px
+	position: relative
+	margin-top: 100px
+	background-image: url(../img/section-intro/item-intro-bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	@media(max-width: 1024px)
+		background-image: none
+
+	@media(max-width: 998px)
+		margin-top: 0
+	//&:after
+		content: ''
+		display: block
+		position: absolute
+		width: 4px
+		height: 70%
+		background: linear-gradient(to bottom, #7774b7 1%,#a77bbb 100%)
+		left: 0px
+		top: -12px
+		@media(max-width: 998px)
+			height: 100%
+			top: 50%
+			transform: translateY(-50%)
+			left: 25px
+		@media(max-width: 768px)
+			display: none
+
+	//&:before
+		content: ''
+		display: block
+		position: absolute
+		width: 4px
+		height: 70%
+		background: linear-gradient(to bottom, #7774b7 1%,#a77bbb 100%)
+		right: 0px
+		bottom: -12px
+		@media(max-width: 998px)
+			display: none
+
+	&__part
+		//margin: 15px auto
+		margin: 32px auto
+		position: relative
+		color: #fff
+		line-height: 1.2
+		width: 424px
+		&--top
+			font-family: Oswald
+		&--bottom
+			font-size: 21px
+		@media(max-width: 1240px)
+			width: 400px
+		@media(max-width: 768px)
+			width: 100%
+			text-align: center
+		&--top:after
+			content: ''
+			display: block
+			position: absolute
+			width: 70%
+			height: 2px
+			background-color: #fff
+			bottom: -33px
+			@media(max-width: 768px)
+				left: 50%
+				transform: translateX(-50%)
+
+		//&--top:before
+			content: ''
+			display: block
+			position: absolute
+			width: 435px
+			//width: 100%
+			left: -68px
+			height: 4px
+			background: linear-gradient(to right, #7774b7 1%,#a77bbb 100%)
+			top: -30px
+			@media(max-width: 1240px)
+				width: 100%
+				left: -61px
+			@media(max-width: 998px)
+				display: none
+		//&--bottom:before
+			content: ''
+			display: block
+			position: absolute
+			width: 435px
+			//width: 100%
+			right: -68px
+			height: 4px
+			background: linear-gradient(to right, #7774b7 1%,#a77bbb 100%)
+			bottom: -30px
+			@media(max-width: 1240px)
+				width: 100%
+				right: -61px
+			@media(max-width: 998px)
+				display: none
+
+
+.descriptio-intro__second
+	position: relative
+	display: flex
+	align-items: left
+	flex-direction: column
+	max-width: 495px
+	width: 100%
+	margin-top: 80px
+	@media(max-width: 1024px)
+		margin-top: 0px
+
+.map-decription
+	position: absolute
+	height: 240px
+	width: 240px
+	background-color: rgba(255 ,255, 255, 0.6)
+	border-radius: 50%
+	left: 50%
+	transform: translateX(-50%)
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	text-align: center
+	padding: 20px
+	box-sizing: border-box
+.map-intro
+	margin-top: 80px
+	width: 100%
+
+
+.map-decription
+	&__title
+		color: #895fa1
+		font-size: 48px
+		font-family: Oswald
+	&__text
+		font-family: Oswald
+		font-size: 24px
+		color: #3a4473
+.map-decription__text-color
+	color: #895fa1
+	font-size: 25px
+	font-family: Oswald
+
+
+.become-ambassadors-button
+	height: 30px
+	padding: 5px
+	width: 150px
+	text-align: center
+	line-height: 30px
+	background-color: #895fa1
+	//font-size: 25px
+	color: #fff
+	font-family: Oswald
+	@media(max-width: 768px)
+		display: none
+	&:hover
+		cursor: pointer
+		background-color: #384272
+
+
+///////////////ANIMATE BUTTON//////////////////
+
+$anime-time: 8s
+
+$box-size: 145px
+$clip-distance: .12
+$clip-size: $box-size * (1 + $clip-distance * 2)
+$path-width: 1px
+$main-color-hover: #384272
+$main-color: #895fa1
+%full-fill
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+
+a.button-ambassador-fixed-link
+	height: 100%
+	width: 100%
+	color: #fff
+	background-color: #895fa1
+	display: block
+	&:hover
+		background-color: #384272
+
+
+
+.button-ambassador-fixed
+	position: fixed
+	z-index: 9
+	bottom: 50px
+	left: 50px
+	width: 145px
+	height: 40px
+	line-height: 40px
+	margin: auto
+	text-align: center
+	color: #895fa1
+	font-family: Oswald
+	box-shadow: inset 0 0 0 1px rgba($main-color, .5)
+	&:hover
+		box-shadow: inset 0 0 0 1px rgba($main-color-hover, .5)
+	//@media(max-width: 768px)
+		bottom: 10px
+		left: 10px
+
+	//@media(max-width: 480px)
+		display: none
+
+
+	&::before,
+	&::after
+		@extend %full-fill
+		content: ''
+		z-index: -1
+		margin: -1 * $clip-distance * 100%
+		box-shadow: inset 0 0 0 $path-width
+		animation: clipMe $anime-time linear infinite
+
+	&::before
+		animation-delay: $anime-time * -.5
+
+
+
+@keyframes clipMe
+	0%, 100%
+		clip: rect(0px, $clip-size, $path-width, 0px)
+	25%
+		clip: rect(0px, $path-width, $clip-size, 0px)
+	50%
+		clip: rect($clip-size - $path-width, $clip-size, $clip-size, 0px)
+	75%
+		clip: rect(0px, $clip-size, $clip-size, $clip-size - $path-width)
+

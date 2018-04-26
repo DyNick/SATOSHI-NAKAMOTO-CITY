@@ -1,0 +1,25 @@
+mixin monument-location
+	section.monument-location#monument-location
+		div.container.monument-location-container
+			h2.monument-location__title ГДЕ БУДЕТ ПОСТРОЕН ПАМЯТНИК?
+			h3.monument-location__sub-title Памятник устанавливается в каждом городе, собравшем достаточно средств:
+			div.monument-location__inner
+
+				div.monument-location__inner__half.monument-location__inner__half--first
+					div.aos-init.aos-animate(data-aos='fade-down', data-aos-easing='ease-in-sine', data-aos-duration='600', data-aos-offset='150')
+						div.monument-location__item
+							span.monument-location__number 1 BTC
+							span.monument-location__text - для виртуального памятника
+						div.monument-location__item
+							span.monument-location__number 10 BTC
+							span.monument-location__text - для физического памятника
+
+						div.monument-location__item.monument-location__item-italic
+							span.monument-location__number.monument-location__number--star *
+							span.monument-location__text
+								|В случае, если Город не собрал,
+								span 1 BTC
+								|  то средства поступают в бюджет Республики
+				div.monument-location__inner__half.monument-location__inner__half--second
+						img.monument-location-img(src='img/monument-location/monument-location-phone.png')
+

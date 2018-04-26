@@ -1,0 +1,592 @@
+
+
+.roadmap
+	padding: 60px 0 185px
+	background-color: #ebf0f9
+
+.roadmap__title
+	margin-bottom: 100px
+
+.roadmap__items
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	width: 100%
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+	position: relative
+	margin-bottom: 258px
+	&.roadmap__items--first, &.roadmap__items--second, &.roadmap__items--thirdth
+		margin-bottom: 212px
+	&:after
+		background-color: #3848a9
+		content: ''
+		position: absolute
+		top: 48px
+		left: 300px
+		width: -webkit-calc(100% - 300px * 2)
+		width: calc(100% - 300px * 2)
+		height: 3px
+	&:first-of-type:after
+		width: -webkit-calc(100% - 300px)
+		width: calc(100% - 300px)
+		left: 0
+	&:last-of-type
+		margin-bottom: 0
+		&:before
+			display: none
+		&:after
+			right: 0
+			width: -webkit-calc(100% - 300px)
+			width: calc(100% - 300px)
+			left: 0
+	&:nth-child(odd):before
+		content: ''
+		position: absolute
+		top: 48px
+		right: 0
+		width: 300px
+		height: 355px
+		border: 3px solid #3848a9
+		-webkit-border-top-right-radius: 50%
+		border-top-right-radius: 50%
+		-webkit-border-bottom-right-radius: 50%
+		border-bottom-right-radius: 50%
+		border-left: 0
+	&:nth-child(even):before
+		content: ''
+		position: absolute
+		top: 48px
+		left: 0
+		width: 300px
+		height: 355px
+		border: 3px solid #3848a9
+		-webkit-border-top-left-radius: 50%
+		border-top-left-radius: 50%
+		-webkit-border-bottom-left-radius: 50%
+		border-bottom-left-radius: 50%
+		border-right: 0
+
+.roadmap__item
+	position: relative
+	z-index: 3
+	&:nth-child(2)
+		margin: 0 10%
+
+.roadmap__itemInfo
+	position: relative
+	text-align: center
+	&:before
+		content: ''
+		position: absolute
+		top: 39px
+		left: 45%
+		width: 23px
+		height: 23px
+		background-color: #c886d3
+		border: solid 6px #fff
+		-webkit-border-radius: 50%
+		border-radius: 50%
+		z-index: 2
+
+.roadmap__itemDate
+	font-family: Oswald
+	font-size: 24px
+	line-height: 1.65
+	color: #424242
+	display: block
+	margin-bottom: 25px
+	width: 265px
+
+.roadmap__itemStage
+
+	height: 40px
+	margin-top: 40px
+	font-family: SourceSansPro
+	font-size: 21px
+	color: #424242
+	line-height: 20px
+
+/*===============ROAD STYLE======================
+
+.roadmap__itemInfo--last
+	visibility: hidden
+
+.roadmap__itemInfo
+	position: relative
+	text-align: center
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+
+.roadmap__itemStage
+	margin-top: 106px
+
+/*==firs line===
+
+.roadmap__itemDate--tenth
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--tenth:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-20.png)
+	position: absolute
+	top: 0px
+	background-size: contain
+	background-repeat: no-repeat
+	/*left: 23%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 90px
+	height: 90px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemDate--eleventh
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--eleventh:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-17.png)
+	position: absolute
+	top: -7px
+	background-size: contain
+	background-repeat: no-repeat
+	/*left: 23%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 110px
+	height: 100px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--eleventh
+	margin-top: 106px
+
+.roadmap__itemDate--twelveth
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--twelveth:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-18.png)
+	position: absolute
+	top: -7px
+	background-size: contain
+	background-repeat: no-repeat
+	/*left: 23%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 100px
+	height: 100px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--twelveth
+	margin-top: 106px
+
+/*==/firs line===
+
+/*==1==
+
+.roadmap__itemDate--first
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--first:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-13.png)
+	position: absolute
+	top: -7px
+	background-size: contain
+	background-repeat: no-repeat
+	/*left: 23%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 100px
+	height: 100px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--first
+	margin-top: 106px
+
+/*==2==
+
+.roadmap__itemDate--second
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--second:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-14.png)
+	position: absolute
+	top: -6px
+	background-size: contain
+	background-repeat: no-repeat
+	/* left: 12%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 125px
+	height: 116px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--second
+	margin-top: 106px
+
+/*==3=
+
+.roadmap__itemDate--third
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--third:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-15.png)
+	position: absolute
+	top: 0px
+	background-size: contain
+	background-repeat: no-repeat
+	/*left: 12%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 100px
+	height: 100px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--third
+	margin-top: 106px
+
+/*==4==
+
+.roadmap__itemDate--fourth
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--fourth:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-12.png)
+	position: absolute
+	top: -8px
+	background-size: contain
+	background-repeat: no-repeat
+	/* left: 12%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 135px
+	height: 135px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--fourth
+	margin-top: 106px
+
+/*===5===
+
+.roadmap__itemDate--fivth
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--fivth:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-3.png)
+	position: absolute
+	top: -10px
+	background-size: contain
+	background-repeat: no-repeat
+	/*left: 19%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 122px
+	height: 108px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--fivth
+	margin-top: 106px
+
+/*===6===
+
+.roadmap__itemDate--six
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--six:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-11.png)
+	position: absolute
+	top: -10px
+	background-size: contain
+	background-repeat: no-repeat
+	/* left: 25%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 130px
+	height: 123px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--six
+	margin-top: 106px
+
+/*===7===
+
+.roadmap__itemDate--seventh
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--seventh:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-7.png)
+	position: absolute
+	top: -9px
+	background-size: contain
+	background-repeat: no-repeat
+	/* left: 28%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 100px
+	height: 123px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--seventh
+	margin-top: 106px
+
+/*===8===
+
+.roadmap__itemDate--eighth
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--eighth:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-16.png)
+	position: absolute
+	top: 5px
+	background-size: contain
+	background-repeat: no-repeat
+	/* left: 19%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 142px
+	height: 128px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--eighth
+	margin-top: 106px
+
+/*===9===
+
+.roadmap__itemDate--nineth
+	position: absolute
+	margin-top: -42px
+
+.roadmap__itemInfo--nineth:before
+	content: ''
+	background-image: url(http://satoshirepublic.org/img/road-icon/road-icon-21.png)
+	position: absolute
+	top: 5px
+	background-size: contain
+	background-repeat: no-repeat
+	/* left: 19%;
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 90px
+	height: 90px
+	background-color: inherit
+	border: none
+	border-radius: 0%
+	z-index: 2
+
+.roadmap__itemStage--nineth
+	margin-top: 106px
+
+.roadmap__item
+	width: 22%
+.roadmap__content
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-webkit-flex-direction: column
+	-ms-flex-direction: column
+	flex-direction: column
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+
+.roadmap__title
+	margin-bottom: 60px
+@media (max-width: 1024px)
+	.roadmap__content
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-box-pack: center
+		-webkit-justify-content: center
+		-ms-flex-pack: center
+		justify-content: center
+
+	.roadmap__title
+		margin-bottom: 60px
+
+	.roadmap__items
+		position: relative
+		width: 100%
+		min-height: 1px
+		padding-right: 15px
+		padding-left: 15px
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 50%
+		-ms-flex: 0 0 50%
+		flex: 0 0 50%
+		max-width: 50%
+		margin: 0 auto
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		&:first-child
+			padding-top: 20px
+		&:after, &:first-of-type:after, &:last-of-type:after
+			height: 100%
+			width: 3px
+			left: 0
+			top: 0
+		&:nth-child(odd):before, &:nth-child(even):before
+			display: none
+
+	.roadmap__item
+		&:nth-child(2)
+			margin: 0 0 50px
+		display: block
+		width: 100%
+		margin: 0 0 50px
+
+	.roadmap__itemInfo
+		text-align: left
+		&:before
+			left: -25px
+			top: 4px
+
+	.roadmap__itemDate
+		line-height: 1.3
+		margin-bottom: 5px
+
+	.roadmap__itemStage
+		font-size: 18px
+		line-height: 20px
+
+
+
+	//==========================
+	.roadmap__item
+		width: 100%
+	.roadmap__itemInfo
+		display: block
+	.roadmap__items
+		&.roadmap__items--fourth
+			flex-direction: column-reverse
+		&.roadmap__items--thirdth
+			margin-bottom: -15px
+		&.roadmap__items--second
+			margin-bottom: -1px
+			flex-direction: column-reverse
+		&.roadmap__items--first
+			margin-bottom: 0px
+	.roadmap__itemDate, .roadmap__itemStage
+		text-align: left
+	.roadmap__itemInfo--eleventh:before, .roadmap__itemInfo--twelveth:before, .roadmap__itemInfo--tenth:before, .roadmap__itemInfo--first:before, .roadmap__itemInfo--second:before, .roadmap__itemInfo--third:before, .roadmap__itemInfo--fivth:before, .roadmap__itemInfo--fourth:before, .roadmap__itemInfo--fivth:before, .roadmap__itemInfo--six:before, .roadmap__itemInfo--seventh:before, .roadmap__itemInfo--eighth:before
+		content: ''
+		background-image: none
+		position: absolute
+		left: -15px
+		top: 4px
+		width: 23px
+		height: 23px
+		background-color: #c886d3
+		border: solid 6px #fff
+		border-radius: 50%
+		z-index: 2
+	.roadmap__itemInfo--nineth
+		display: none
+		&:before
+			content: ''
+			background-image: none
+			position: absolute
+			left: -15px
+			top: 4px
+			width: 23px
+			height: 23px
+			background-color: #c886d3
+			border: solid 6px #fff
+			border-radius: 50%
+			z-index: 2
+	.roadmap__itemDate
+		position: relative
+		margin-top: auto
+	.roadmap__itemStage
+		text-align: left
+		margin-top: 10px
+		height: auto
+
+.partners
+	display: none
+
+.roadmap__wrap.container
+	max-width: 992px
+	@media (max-width: 1440px)
+		max-width: 1240px
+
+	@media (max-width: 1024px)
+		max-width: 998px
+
+	@media (max-width: 768px)
+		max-width: 768px
+
+	@media (max-width: 576px)
+		max-width: 540px

@@ -1,0 +1,163 @@
+.become-ambassadors
+	margin-top: 175px
+	background-image: url('../img/become-ambassadors/become-ambassadors-bg.png')
+	background-repeat: no-repeat
+	background-size: cover
+	height: 512px
+	background-position: 76% 0
+
+
+	@media(max-width: 1240px)
+		margin-top: 305px
+	@media(max-width: 998px)
+		margin-top: 190px
+	@media(max-width: 768px)
+		margin-top: 145px
+		background-position: 76% 0
+		//height: 730px
+		height: 825px
+	@media(max-width: 480px)
+		margin-top: 35px
+		height: 860px
+.container__become-ambassadors
+	position: relative
+
+.hexagon
+	width: 161px
+	height: 115px
+	background: #fff
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	&:before
+		content: ""
+		position: absolute
+		top: -35px
+		left: 0
+		width: 0
+		height: 0
+		border-left: 80px solid transparent
+		border-right: 80px solid transparent
+		border-bottom: 35px solid #fff
+
+	&:after
+		content: ""
+		position: absolute
+		bottom: -35px
+		left: 0
+		width: 0
+		height: 0
+		border-left: 80px solid transparent
+		border-right: 80px solid transparent
+		border-top: 35px solid #fff
+
+
+.hexagon-container
+	display: flex
+	align-items: center
+	justify-content: center
+	@media(max-width: 768px)
+		flex-direction: column
+	&__first
+		background-image: url('../img/become-ambassadors/hexagon-bg2.png')
+		background-repeat: no-repeat
+		background-size: cover
+		height: 330px
+		width: 300px
+		position: relative
+		right: -30px
+		@media(max-width: 768px)
+			right: 0px
+			top: -55px
+	&__second
+		background-image: url('../img/become-ambassadors/hexagon-bg2.png')
+		background-repeat: no-repeat
+		background-size: cover
+		height: 330px
+		width: 300px
+		position: relative
+		left: -9px
+		@media(max-width: 768px)
+			left: 0px
+			top: -92px
+	&__third
+		background-image: url('../img/become-ambassadors/hexagon-bg.png')
+		background-repeat: no-repeat
+		background-size: cover
+		height: 280px
+		width: 244px
+		position: absolute
+		left: 50%
+		transform: translateX(-505px)
+		@media(max-width: 768px)
+			display: none
+	&__fourth
+		background-image: url('../img/become-ambassadors/hexagon-bg1.png')
+		background-repeat: no-repeat
+		background-size: cover
+		height: 280px
+		width: 244px
+		position: absolute
+		left: 50%
+		transform: translateX(-378px)
+		top: -93px
+		@media(max-width: 768px)
+			display: none
+	&__fivth
+		background-image: url('../img/become-ambassadors/hexagon-bg1.png')
+		background-repeat: no-repeat
+		background-size: cover
+		height: 280px
+		width: 244px
+		position: absolute
+		left: 50%
+		transform: translateX(-378px)
+		bottom: -193px
+		@media(max-width: 768px)
+			display: none
+
+.hexagon-inner
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50% ,-50%)
+	text-align: center
+	font-size: 27px
+	font-family: Oswald
+	color: #fff
+	line-height: 1.3
+	&__text-color
+		color: #dab1fe
+
+.hexagon-container__description
+	position: absolute
+	width: 480px
+	left: 50%
+	transform: translateX(-100px)
+	font-family: SourceSansPro
+	font-size: 18px
+	color: #fff
+	bottom: -50px
+	line-height: 1.3
+	@media(max-width: 768px)
+		transform: translateX(-50%)
+		text-align: center
+		bottom: 15px
+	@media(max-width: 480px)
+		width: 95%
+	@media(max-width: 375px)
+		bottom: -15px
+	span
+		font-family: Oswald
+		padding-left: 3px
+		padding-right: 3px
+		text-transform: uppercase
+		color: #dab1fe
+
+
+
+.become-ambassadors__title
+	padding: 50px 0 0px
+	@media(max-width: 768px)
+		padding: 50px 0
